@@ -1,14 +1,15 @@
-public class Imagen {
+package org.example.entities;
+
+public class UnidadMedida {
+
     private String denominacion;
 
-//Constructores
-
-    public Imagen(String denominacion) {
+    public UnidadMedida(String denominacion) {
         this.denominacion = denominacion;
     }
-    public Imagen() {}
 
-// Getters y Setters
+    public UnidadMedida() {
+    }
 
     public String getDenominacion() {
         return denominacion;
@@ -18,11 +19,11 @@ public class Imagen {
         this.denominacion = denominacion;
     }
 
-
     @Override
     public String toString() {
-        return "Imagen{" +
+        return "UnidadMedida{" +
                 "denominacion='" + denominacion + '\'' +
                 '}';
     }
 }
+

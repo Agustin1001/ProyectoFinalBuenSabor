@@ -1,3 +1,5 @@
+package org.example.entities;
+
 public class Provincia {
     private String nombre;
     private Pais pais;
