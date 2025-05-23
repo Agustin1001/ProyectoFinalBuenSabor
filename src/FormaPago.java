@@ -1,4 +1,1 @@
-public enum FormaPago {
-    EFECTIVO,
-    MERCADOPAGO
-}
+public enum FormaPago {}

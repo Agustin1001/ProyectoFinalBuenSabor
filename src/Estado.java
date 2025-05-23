@@ -1,7 +1,1 @@
-public enum Estado {
-    PREPARACION,
-    PENDIENTE,
-    CANCELADO,
-    RECHAZADO,
-    ENTREGADO
-}
+public enum Estado {}
