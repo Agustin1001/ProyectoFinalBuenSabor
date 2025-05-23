@@ -29,7 +29,7 @@ public class Promocion {
         this.imagenPromocional = imagenPromocional;
     }
 
-    public Promocion(String denominacion, LocalDate fechaDesde, LocalDate fechaHasta, LocalTime horaDesde, LocalTime horaHasta, String descripcionDescuento, Double precioPromocional, TipoPromocion tipoPromocion, Imagen imagenPromocional, Set<Articulo> articulos) {
+    public Promocion(String denominacion, LocalDate fechaDesde, LocalDate fechaHasta, LocalTime horaDesde, LocalTime horaHasta, String descripcionDescuento, Double precioPromocional, TipoPromocion tipoPromocion, Imagen imagenPromocional) {
         this.denominacion = denominacion;
         this.fechaDesde = fechaDesde;
         this.fechaHasta = fechaHasta;
