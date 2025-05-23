@@ -1,1 +1,3 @@
-public enum TipoPromocion {}
+public enum TipoPromocion {
+    HAPPYHOUR,PROMOCION1;
+}
