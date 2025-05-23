@@ -61,4 +61,18 @@ public class Factura {
     public double getTotalVenta() {return totalVenta;}
 
     public void setTotalVenta(double totalVenta) {this.totalVenta = totalVenta;}
+
+
+    @Override
+    public String toString() {
+        return "Factura{" +
+                "fechaFacturacion=" + fechaFacturacion +
+                ", mpPaymetid=" + mpPaymetid +
+                ", mpMechantOrderId=" + mpMechantOrderId +
+                ", mpPreferenceId='" + mpPreferenceId + '\'' +
+                ", mpPaymenType='" + mpPaymenType + '\'' +
+                ", formaPago=" + formaPago +
+                ", totalVenta=" + totalVenta +
+                '}';
+    }
 }

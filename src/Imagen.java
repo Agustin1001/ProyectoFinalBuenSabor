@@ -17,4 +17,12 @@ public class Imagen {
     public void setDenominacion(String denominacion) {
         this.denominacion = denominacion;
     }
+
+
+    @Override
+    public String toString() {
+        return "Imagen{" +
+                "denominacion='" + denominacion + '\'' +
+                '}';
+    }
 }

@@ -98,4 +98,11 @@ public class Promocion {
     public void setTipoPromocion(TipoPromocion tipoPromocion) {this.tipoPromocion = tipoPromocion;}
     public Imagen getImagenPromocional() {return imagenPromocional;}
     public void setImagenPromocional(Imagen imagenPromocional) {this.imagenPromocional = imagenPromocional;}
+
+    @Override
+    public String toString() {
+        return " denominacion='" + denominacion + ", fechaDesde=" + fechaDesde + ", fechaHasta=" + fechaHasta + ", horaDesde=" + horaDesde + ", horaHasta=" + horaHasta + ", descripcion='" + descripcionDescuento + ", precioPromocional=" + precioPromocional + ", tipoPromocion=" + tipoPromocion + "\n" +
+                "   Imagenes=" + imagenPromocional + "\n" +
+                "   ListaArticulos=" + articulos;
+    }
 }
