@@ -1,3 +1,7 @@
+package org.example.entities;
+
+import org.example.entities.enums.FormaPago;
+
 import java.time.LocalDate;
 
 public class Factura {

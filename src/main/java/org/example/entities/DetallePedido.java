@@ -1,3 +1,5 @@
+package org.example.entities;
+
 public class DetallePedido {
     private int cantidad;
     private double subTotal;

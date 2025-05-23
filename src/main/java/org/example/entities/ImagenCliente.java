@@ -1,13 +1,18 @@
-public class UnidadMedida {
+package org.example.entities;
 
+public class ImagenCliente {
     private String denominacion;
 
-    public UnidadMedida(String denominacion) {
+//Constructores
+
+    public ImagenCliente(String denominacion) {
         this.denominacion = denominacion;
     }
 
-    public UnidadMedida() {
+    public ImagenCliente() {
     }
+
+// Getters y Setters
 
     public String getDenominacion() {
         return denominacion;
@@ -19,9 +24,8 @@ public class UnidadMedida {
 
     @Override
     public String toString() {
-        return "UnidadMedida{" +
+        return "ImagenCliente{" +
                 "denominacion='" + denominacion + '\'' +
                 '}';
     }
 }
-

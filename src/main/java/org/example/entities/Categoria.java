@@ -1,6 +1,15 @@
+package org.example.entities;
+
+import lombok.*;
+
 import java.util.HashSet;
 import java.util.Set;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Categoria {
 
     private String denominacion;
@@ -9,14 +18,7 @@ public class Categoria {
     private Set<Categoria> subCategorias;
     private Set<Articulo> listaArticulos;
 
-    public Categoria() {}
 
-    public Categoria(String denominacion) {
-        this.denominacion = denominacion;
-        subCategorias = new HashSet<>();
-        listaArticulos = new HashSet<>();
-        this.categoriaPadre = null;
-    }
 
     public void agregarSubCategoria(Categoria subCategoria) {
         if (this.subCategorias == null) {
@@ -45,21 +47,6 @@ public class Categoria {
         }
     }
 
-    public String getDenominacion() {
-        return denominacion;
-    }
-
-    public void setDenominacion(String denominacion) {
-        this.denominacion = denominacion;
-    }
-
-    public Categoria getCategoriaPadre() {
-        return categoriaPadre;
-    }
-
-    public void setCategoriaPadre(Categoria categoriaPadre) {
-        this.categoriaPadre = categoriaPadre;
-    }
 
     @Override
     public String toString() {

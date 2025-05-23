@@ -1,3 +1,9 @@
+package org.example.entities;
+
+import org.example.entities.enums.Estado;
+import org.example.entities.enums.FormaPago;
+import org.example.entities.enums.TipoEnvio;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.HashSet;

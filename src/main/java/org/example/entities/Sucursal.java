@@ -1,3 +1,5 @@
+package org.example.entities;
+
 import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Set;

@@ -1,3 +1,7 @@
+package org.example.entities;
+
+import org.example.entities.enums.TipoPromocion;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.HashSet;

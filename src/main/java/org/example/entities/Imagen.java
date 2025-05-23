@@ -1,14 +1,14 @@
-public class ImagenCliente {
+package org.example.entities;
+
+public class Imagen {
     private String denominacion;
 
 //Constructores
 
-    public ImagenCliente(String denominacion) {
+    public Imagen(String denominacion) {
         this.denominacion = denominacion;
     }
-
-    public ImagenCliente() {
-    }
+    public Imagen() {}
 
 // Getters y Setters
 
@@ -20,9 +20,10 @@ public class ImagenCliente {
         this.denominacion = denominacion;
     }
 
+
     @Override
     public String toString() {
-        return "ImagenCliente{" +
+        return "Imagen{" +
                 "denominacion='" + denominacion + '\'' +
                 '}';
     }
