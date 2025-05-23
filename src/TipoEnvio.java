@@ -1,1 +1,4 @@
-public enum TipoEnvio {}
+public enum TipoEnvio {
+    DELIVERY,
+    TAKEAWAY
+}
