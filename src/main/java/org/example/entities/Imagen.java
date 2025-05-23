@@ -1,3 +1,5 @@
+package org.example.entities;
+
 public class Imagen {
     private String denominacion;
 
@@ -21,7 +23,7 @@ public class Imagen {
 
     @Override
     public String toString() {
-        return "Imagen{" +
+        return "org.example.entities.Imagen{" +
                 "denominacion='" + denominacion + '\'' +
                 '}';
     }

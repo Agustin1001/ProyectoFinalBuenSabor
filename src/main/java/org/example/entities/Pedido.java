@@ -1,3 +1,5 @@
+package org.example.entities;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.HashSet;
@@ -58,7 +60,7 @@ public class Pedido {
 
     @Override
     public String toString() {
-        return "Pedido [ " + "horaEstimadaFinalizacion=" + horaEstimadaFinalizacion + ", total=" + total + ", totalCosto=" + totalCosto + ", " + estado +
+        return "org.example.entities.Pedido [ " + "horaEstimadaFinalizacion=" + horaEstimadaFinalizacion + ", total=" + total + ", totalCosto=" + totalCosto + ", " + estado +
                 "," + tipoEnvio + "," + formaPago + ", fechaPedido=" + fechaPedido +
                 ", sucursal= " + sucursal.getNombre() + ", domicilio =" + domicilio + "]"
                 + "\n" + ", detallesPedido=" + detallesPedido

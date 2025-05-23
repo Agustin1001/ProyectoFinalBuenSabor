@@ -1,3 +1,5 @@
+package org.example.entities;
+
 import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Set;
@@ -61,7 +63,7 @@ public class Sucursal {
 
     @Override
     public String toString() {
-        return " Sucursal [" +nombre+ ", horarioApertura=" + horarioApertura + ", horarioCierre=" + horarioCierre + ", domicilio=" + domicilio +"]"+"\n"+
+        return " org.example.entities.Sucursal [" +nombre+ ", horarioApertura=" + horarioApertura + ", horarioCierre=" + horarioCierre + ", domicilio=" + domicilio +"]"+"\n"+
                 "  Promociones=" + promociones +"\n"+
                 "  Categorias = "+ categorias;
     }
