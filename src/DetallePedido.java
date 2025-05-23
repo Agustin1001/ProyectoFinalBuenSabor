@@ -1,7 +1,6 @@
 public class DetallePedido {
     private int cantidad;
     private double subTotal;
-
     private Articulo articulo;
 
     public DetallePedido() {
@@ -12,7 +11,6 @@ public class DetallePedido {
         this.subTotal = subTotal;
         this.articulo = articulo;
     }
-
     public int getCantidad() {
         return cantidad;
     }
@@ -29,11 +27,8 @@ public class DetallePedido {
         this.subTotal = subTotal;
     }
 
-    public Articulo getArticulo() {
-        return articulo;
-    }
-
-    public void setArticulo(Articulo articulo) {
-        this.articulo = articulo;
+    @Override
+    public String toString() {
+        return "[ " + cantidad + " " + articulo.denominacion + ", subTotal=" + subTotal + " ]";
     }
 }
