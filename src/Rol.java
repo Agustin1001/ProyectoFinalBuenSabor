@@ -1,1 +1,5 @@
-public enum Rol {}
+public enum Rol {
+    ADMIN,
+    EMPLEADO,
+    CLIENTE
+}
