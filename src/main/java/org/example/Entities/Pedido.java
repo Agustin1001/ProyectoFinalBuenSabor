@@ -1,3 +1,9 @@
+package org.example.Entities;
+
+import org.example.Entities.Enums.Estado;
+import org.example.Entities.Enums.FormaPago;
+import org.example.Entities.Enums.TipoEnvio;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.HashSet;
@@ -58,7 +64,7 @@ public class Pedido {
 
     @Override
     public String toString() {
-        return "Pedido [ " + "horaEstimadaFinalizacion=" + horaEstimadaFinalizacion + ", total=" + total + ", totalCosto=" + totalCosto + ", " + estado +
+        return "org.example.Entities.Pedido [ " + "horaEstimadaFinalizacion=" + horaEstimadaFinalizacion + ", total=" + total + ", totalCosto=" + totalCosto + ", " + estado +
                 "," + tipoEnvio + "," + formaPago + ", fechaPedido=" + fechaPedido +
                 ", sucursal= " + sucursal.getNombre() + ", domicilio =" + domicilio + "]"
                 + "\n" + ", detallesPedido=" + detallesPedido

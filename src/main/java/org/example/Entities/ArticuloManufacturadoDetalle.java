@@ -1,3 +1,5 @@
+package org.example.Entities;
+
 public class ArticuloManufacturadoDetalle {
     private int cantidad;
 

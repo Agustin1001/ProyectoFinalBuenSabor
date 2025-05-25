@@ -1,3 +1,5 @@
+package org.example.Entities;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,7 +16,7 @@ public class Empresa {
         this.cuil = cuil;
         this.sucursales = new HashSet<>();
     }
-    public Empresa(String nombre, String razonSocial, Integer cuil,Sucursal sucursales) {
+    public Empresa(String nombre, String razonSocial, Integer cuil, Sucursal sucursales) {
         this.nombre = nombre;
         this.razonSocial = razonSocial;
         this.cuil = cuil;
@@ -45,7 +47,7 @@ public class Empresa {
 
     @Override
     public String toString() {
-        return "Empresa [" + "nombre=" + nombre + ", razonSocial=" + razonSocial + ", cuil=" + cuil +"]"+"\n"+
+        return "org.example.Entities.Empresa [" + "nombre=" + nombre + ", razonSocial=" + razonSocial + ", cuil=" + cuil +"]"+"\n"+
                 "Sucursales = " +"\n"+ sucursales ;
     }
 }

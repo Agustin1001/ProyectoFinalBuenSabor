@@ -1,3 +1,5 @@
+package org.example.Entities;
+
 public class Domicilio {
     private String calle;
     private Integer numero;

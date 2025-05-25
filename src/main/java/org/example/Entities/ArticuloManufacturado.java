@@ -1,3 +1,5 @@
+package org.example.Entities;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -42,7 +44,7 @@ public class ArticuloManufacturado extends Articulo {
 
     @Override
     public String toString() {
-        return "\n" + "ArticuloManufacturado [" + "denominacion=" + denominacion + ", precioVenta=" + precioVenta + ",  descripcion=" + descripcion + ", tiempoEstimadoMinutos=" + tiempoEstimadoMinutos + ", preparacion=" + preparacion + "]" +
+        return "\n" + "org.example.Entities.ArticuloManufacturado [" + "denominacion=" + denominacion + ", precioVenta=" + precioVenta + ",  descripcion=" + descripcion + ", tiempoEstimadoMinutos=" + tiempoEstimadoMinutos + ", preparacion=" + preparacion + "]" +
                 "\n" + ",detalles=" + articuloManufacturadoDetalles + "\n";
     }
 }

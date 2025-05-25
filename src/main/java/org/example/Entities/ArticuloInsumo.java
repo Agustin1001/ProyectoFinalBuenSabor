@@ -1,3 +1,5 @@
+package org.example.Entities;
+
 public class ArticuloInsumo extends Articulo {
     private double precioCompra;
     private int stockActual;

@@ -1,3 +1,5 @@
+package org.example.Entities;
+
 public class Pais {
     private String nombre;
 
