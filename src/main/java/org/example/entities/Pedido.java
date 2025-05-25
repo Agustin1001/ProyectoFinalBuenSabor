@@ -1,6 +1,6 @@
 package org.example.entities;
-
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.example.entities.enums.Estado;
 import org.example.entities.enums.FormaPago;
 import org.example.entities.enums.TipoEnvio;
@@ -12,12 +12,12 @@ import java.util.Set;
 
 @Setter
 @Getter
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 
-public class Pedido {
+public class Pedido extends Base {
     private LocalTime horaEstimadaFinalizacion;
     private double total;
     private double totalCosto;

@@ -1,17 +1,13 @@
 package org.example.entities;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
-public class Pais {
+@Setter
+@Getter
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Pais extends Base{
     private String nombre;
-
-    public Pais() {
-    }
-
-    public Pais(String nombre) {
-        this.nombre = nombre;
-    }
-
-    @Override
-    public String toString() {
-        return nombre;
-    }
 }

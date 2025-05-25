@@ -1,44 +1,16 @@
 package org.example.entities;
-
-public class Domicilio {
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+@Setter
+@Getter
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Domicilio extends Base{
     private String calle;
     private Integer numero;
     private Integer cp;
     private Localidad localidad;
 
-    public Domicilio() {
-    }
-
-    public Domicilio(String calle, Integer numero, Integer cp) {
-        this.calle = calle;
-        this.numero = numero;
-        this.cp = cp;
-    }
-    public Domicilio(String calle, Integer numero, Integer cp, Localidad localidad) {
-        this.calle = calle;
-        this.numero = numero;
-        this.cp = cp;
-        this.localidad = localidad;
-    }
-
-    public String getCalle() {
-        return calle;
-    }
-
-    public Integer getNumero() {
-        return numero;
-    }
-
-    public Integer getCp() {
-        return cp;
-    }
-
-    public Localidad getLocalidad() {
-        return localidad;
-    }
-
-    @Override
-    public String toString() {
-        return  calle + ", numero=" + numero + ", cp=" + cp + ", localidad =" + localidad;
-    }
 }

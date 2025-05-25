@@ -1,5 +1,4 @@
 package org.example.entities;
 
-public class ImagenCliente {
-
+public class Base {
 }
