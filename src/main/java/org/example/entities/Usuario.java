@@ -1,9 +1,6 @@
 package org.example.entities;
-
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-
 @Setter
 @Getter
 @SuperBuilder
@@ -13,7 +10,5 @@ import lombok.experimental.SuperBuilder;
 public class Usuario extends Base{
     private String auth0Id;
     private String username;
-
-
 }
 
