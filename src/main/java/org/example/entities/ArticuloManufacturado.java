@@ -14,6 +14,7 @@ public class ArticuloManufacturado extends Articulo {
     private String descripcion;
     private int tiempoEstimadoMinutos;
     private String preparacion;
+    private Set<ArticuloManufacturadoDetalle> articuloManufacturadoDetalles;
   
     public void agregarArticuloManufacturadoDetalle(ArticuloManufacturadoDetalle a) {
         if(this.articuloManufacturadoDetalles == null) {

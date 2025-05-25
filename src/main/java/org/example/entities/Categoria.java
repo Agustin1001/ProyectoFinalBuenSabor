@@ -11,7 +11,7 @@ import java.util.Set;
 @SuperBuilder
 
 public class Categoria extends Base{
-  
+ 
     private String denominacion;
 
     private Categoria categoriaPadre;
@@ -44,7 +44,6 @@ public class Categoria extends Base{
             this.listaArticulos.remove(articulo);
         }
     }
-
     @Override
     public String toString() {
 

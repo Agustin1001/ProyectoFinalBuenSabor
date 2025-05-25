@@ -16,6 +16,7 @@ public abstract class Articulo extends Base{
     protected UnidadMedida unidadMedida;
     protected Set<Imagen> listaImagenes;
 
+
     public void agregarImagen(Imagen imagen) {
         if(this.listaImagenes==null) {
             this.listaImagenes = new HashSet<>();

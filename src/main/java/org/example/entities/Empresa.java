@@ -10,12 +10,10 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @ToString
 public class Empresa extends Base {
-
     private String nombre;
     private String razonSocial;
     private Integer cuil;
     private Set<Sucursal> sucursales;
-
     public void agregarSucursal (Sucursal sucursal){
         if(this.sucursales==null){
             this.sucursales = new HashSet<>();
@@ -28,5 +26,4 @@ public class Empresa extends Base {
             this.sucursales.remove(sucursal);
         }
     }
-
 }

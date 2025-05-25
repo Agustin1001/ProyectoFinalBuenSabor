@@ -1,13 +1,6 @@
 
-import org.example.entities.enums.FormaPago;
-import java.time.LocalDate;
+package org.example.entities;
 
 public class Factura {
-    private LocalDate fechaFacturacion;
-    private int mpPaymetid;
-    private int mpMechantOrderId;
-    private String mpPreferenceId;
-    private String mpPaymenType;
-    private FormaPago formaPago;
-    private double totalVenta;
+
 }

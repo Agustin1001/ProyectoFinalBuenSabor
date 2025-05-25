@@ -1,7 +1,6 @@
 package org.example.entities;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-
 @Getter
 @Setter
 @NoArgsConstructor

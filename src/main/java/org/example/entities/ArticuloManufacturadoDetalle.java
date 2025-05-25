@@ -8,9 +8,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @ToString
 public class ArticuloManufacturadoDetalle extends Base{
-
     private int cantidad;
 
     private ArticuloInsumo articuloInsumo;
-
 }
