@@ -1,3 +1,5 @@
+package org.example.entities;
+
 import java.time.LocalDate;
 
 public class Factura {
@@ -65,7 +67,7 @@ public class Factura {
 
     @Override
     public String toString() {
-        return "Factura{" +
+        return "org.example.entities.Factura{" +
                 "fechaFacturacion=" + fechaFacturacion +
                 ", mpPaymetid=" + mpPaymetid +
                 ", mpMechantOrderId=" + mpMechantOrderId +

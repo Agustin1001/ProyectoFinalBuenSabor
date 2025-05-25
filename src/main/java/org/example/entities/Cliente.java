@@ -1,3 +1,5 @@
+package org.example.entities;
+
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
@@ -44,7 +46,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente [" + "nombreCompleto" + nombre + ", " + apellido + ", telefono='" + telefono + ", email='" + email + ", fechaNacimiento=" + fechaNacimiento +
+        return "org.example.entities.Cliente [" + "nombreCompleto" + nombre + ", " + apellido + ", telefono='" + telefono + ", email='" + email + ", fechaNacimiento=" + fechaNacimiento +
                 "\n" + ", imagen=" + imagen +
                 "\n" + ", domicilio=" + domicilio +
                 "\n" + ", usuario=" + usuario+
