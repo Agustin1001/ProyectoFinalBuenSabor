@@ -1,24 +1,23 @@
 package org.example.entities;
 
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
 import java.util.HashSet;
 import java.util.Set;
-
-public class Categoria {
+@Setter
+@Getter
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Categoria extends Base{
 
     private String denominacion;
-
+    @ToString.Exclude
     private Categoria categoriaPadre;
     private Set<Categoria> subCategorias;
     private Set<Articulo> listaArticulos;
-
-    public Categoria() {}
-
-    public Categoria(String denominacion) {
-        this.denominacion = denominacion;
-        subCategorias = new HashSet<>();
-        listaArticulos = new HashSet<>();
-        this.categoriaPadre = null;
-    }
 
     public void agregarSubCategoria(Categoria subCategoria) {
         if (this.subCategorias == null) {
@@ -45,30 +44,5 @@ public class Categoria {
         if (this.listaArticulos != null) {
             this.listaArticulos.remove(articulo);
         }
-    }
-
-    public String getDenominacion() {
-        return denominacion;
-    }
-
-    public void setDenominacion(String denominacion) {
-        this.denominacion = denominacion;
-    }
-
-    public Categoria getCategoriaPadre() {
-        return categoriaPadre;
-    }
-
-    public void setCategoriaPadre(Categoria categoriaPadre) {
-        this.categoriaPadre = categoriaPadre;
-    }
-
-    @Override
-    public String toString() {
-
-        return "denominacion=" + denominacion + " Padre=" + (categoriaPadre == null ? "No tiene" : categoriaPadre.getDenominacion()) +
-                "\n" + "   listaArticulos=" + listaArticulos +
-                "\n" + "   subCategorias=" + (subCategorias.isEmpty() ? "No tiene \n" : subCategorias);
-
     }
 }

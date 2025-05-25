@@ -1,20 +1,19 @@
 package org.example.entities;
 
-public class Usuario {
+
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
+@Setter
+@Getter
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Usuario extends Base{
     private String auth0Id;
     private String username;
 
-    public Usuario() {
-    }
 
-    public Usuario(String auth0Id, String username) {
-        this.auth0Id = auth0Id;
-        this.username = username;
-    }
-
-    @Override
-    public String toString() {
-        return "[ Id='" + auth0Id + ", username='" + username + "]";
-    }
 }
 

@@ -1,30 +1,15 @@
 package org.example.entities;
 
-public class Imagen {
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
+@Setter
+@Getter
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Imagen extends Base{
     private String denominacion;
 
-//Constructores
-
-    public Imagen(String denominacion) {
-        this.denominacion = denominacion;
-    }
-    public Imagen() {}
-
-// Getters y Setters
-
-    public String getDenominacion() {
-        return denominacion;
-    }
-
-    public void setDenominacion(String denominacion) {
-        this.denominacion = denominacion;
-    }
-
-
-    @Override
-    public String toString() {
-        return "org.example.entities.Imagen{" +
-                "denominacion='" + denominacion + '\'' +
-                '}';
-    }
 }
