@@ -1,16 +1,18 @@
-public class Provincia {
+package org.example.entities;
+
+
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
+@Setter
+@Getter
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Provincia extends Base{
     private String nombre;
     private Pais pais;
 
-    public Provincia() {
-    }
-    public Provincia(String nombre, Pais pais) {
-        this.nombre = nombre;
-        this.pais = pais;
-    }
 
-    @Override
-    public String toString() {
-        return nombre + ", pais =" + pais;
-    }
 }

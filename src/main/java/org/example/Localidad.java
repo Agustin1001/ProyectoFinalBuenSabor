@@ -1,17 +1,16 @@
-public class Localidad {
+package org.example.entities;
+
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
+@Setter
+@Getter
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Localidad extends Base{
     private String nombre;
     private Provincia provincia;
 
-    public Localidad() {
-    }
-
-    public Localidad(String nombre, Provincia provincia) {
-        this.nombre = nombre;
-        this.provincia = provincia;
-    }
-
-    @Override
-    public String toString() {
-        return nombre + ", provincia=" + provincia;
-    }
 }

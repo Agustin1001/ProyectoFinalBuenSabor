@@ -1,8 +1,20 @@
+package org.example.entities;
+
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
 import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Sucursal {
+
+@Setter
+@Getter
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Sucursal extends Base{
     private String nombre;
     private LocalTime horarioApertura;
     private LocalTime horarioCierre;
@@ -11,15 +23,7 @@ public class Sucursal {
     private Set<Categoria> categorias;
     private Set<Promocion> promociones;
 
-    public Sucursal() {}
-    public Sucursal(String nombre, LocalTime horarioApertura, LocalTime horarioCierre, Domicilio domicilio) {
-        this.nombre = nombre;
-        this.horarioApertura = horarioApertura;
-        this.horarioCierre = horarioCierre;
-        this.domicilio = domicilio;
-        categorias = new HashSet<>();
-        promociones = new HashSet<>();
-    }
+
 
     public void agregarCategoria(Categoria c) {
         if(categorias ==null) {
@@ -46,23 +50,5 @@ public class Sucursal {
             promociones.remove(p);
         }
     }
-    public String getNombre() {
-        return nombre;
-    }
-    public LocalTime getHorarioApertura() {
-        return horarioApertura;
-    }
-    public LocalTime getHorarioCierre() {
-        return horarioCierre;
-    }
-    public Domicilio getDomicilio() {
-        return domicilio;
-    }
 
-    @Override
-    public String toString() {
-        return " Sucursal [" +nombre+ ", horarioApertura=" + horarioApertura + ", horarioCierre=" + horarioCierre + ", domicilio=" + domicilio +"]"+"\n"+
-                "  Promociones=" + promociones +"\n"+
-                "  Categorias = "+ categorias;
-    }
 }
