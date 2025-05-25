@@ -1,6 +1,7 @@
 package org.example.entities;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,8 +10,9 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class Categoria {
+@SuperBuilder
+
+public class Categoria extends Base{
 
     private String denominacion;
 

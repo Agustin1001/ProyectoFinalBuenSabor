@@ -1,11 +1,12 @@
 package org.example.entities;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 @ToString
 public class ArticuloInsumo extends Articulo {
     private double precioCompra;

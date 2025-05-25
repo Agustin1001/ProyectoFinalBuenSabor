@@ -13,7 +13,7 @@ import java.util.Set;
 @AllArgsConstructor
 @SuperBuilder
 @ToString
-public abstract class Articulo {
+public abstract class Articulo extends Base{
     protected String denominacion;
     protected double precioVenta;
 
