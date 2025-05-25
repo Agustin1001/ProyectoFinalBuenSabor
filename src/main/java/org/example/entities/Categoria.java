@@ -1,8 +1,6 @@
 package org.example.entities;
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,14 +11,12 @@ import java.util.Set;
 @SuperBuilder
 
 public class Categoria extends Base{
-
+  
     private String denominacion;
 
     private Categoria categoriaPadre;
     private Set<Categoria> subCategorias;
     private Set<Articulo> listaArticulos;
-
-
 
     public void agregarSubCategoria(Categoria subCategoria) {
         if (this.subCategorias == null) {
@@ -48,7 +44,6 @@ public class Categoria extends Base{
             this.listaArticulos.remove(articulo);
         }
     }
-
 
     @Override
     public String toString() {

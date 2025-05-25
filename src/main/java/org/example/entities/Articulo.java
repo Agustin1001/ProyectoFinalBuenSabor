@@ -1,12 +1,8 @@
 package org.example.entities;
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-
 import java.util.HashSet;
 import java.util.Set;
-
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -20,8 +16,6 @@ public abstract class Articulo extends Base{
     protected UnidadMedida unidadMedida;
     protected Set<Imagen> listaImagenes;
 
-
-
     public void agregarImagen(Imagen imagen) {
         if(this.listaImagenes==null) {
             this.listaImagenes = new HashSet<>();
@@ -34,5 +28,4 @@ public abstract class Articulo extends Base{
             this.listaImagenes.remove(imagen);
         }
     }
-
 }

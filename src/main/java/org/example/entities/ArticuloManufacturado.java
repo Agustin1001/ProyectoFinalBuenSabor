@@ -1,12 +1,8 @@
 package org.example.entities;
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-
 import java.util.HashSet;
 import java.util.Set;
-
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,10 +14,7 @@ public class ArticuloManufacturado extends Articulo {
     private String descripcion;
     private int tiempoEstimadoMinutos;
     private String preparacion;
-
-    private Set<ArticuloManufacturadoDetalle> articuloManufacturadoDetalles;
-
-
+  
     public void agregarArticuloManufacturadoDetalle(ArticuloManufacturadoDetalle a) {
         if(this.articuloManufacturadoDetalles == null) {
             this.articuloManufacturadoDetalles = new HashSet<ArticuloManufacturadoDetalle>();
@@ -34,6 +27,5 @@ public class ArticuloManufacturado extends Articulo {
             this.articuloManufacturadoDetalles.remove(a);
         }
     }
-
 
 }

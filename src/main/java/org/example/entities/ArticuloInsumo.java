@@ -13,5 +13,5 @@ public class ArticuloInsumo extends Articulo {
     private int stockActual;
     private int stockMaximo;
     private boolean esParaElaborar;
-
 }
+
