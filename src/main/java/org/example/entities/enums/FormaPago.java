@@ -1,4 +1,4 @@
-package org.example.entities.enums;
+package org.example.Entities.Enums;
 
 public enum FormaPago {
     EFECTIVO,
