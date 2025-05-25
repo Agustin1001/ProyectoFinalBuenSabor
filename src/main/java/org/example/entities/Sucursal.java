@@ -2,19 +2,18 @@ package org.example.entities;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-
 import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Set;
-
-
 @Setter
 @Getter
 @SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+
 public class Sucursal extends Base{
+
     private String nombre;
     private LocalTime horarioApertura;
     private LocalTime horarioCierre;
@@ -22,8 +21,6 @@ public class Sucursal extends Base{
     private Domicilio domicilio;
     private Set<Categoria> categorias;
     private Set<Promocion> promociones;
-
-
 
     public void agregarCategoria(Categoria c) {
         if(categorias ==null) {
@@ -50,5 +47,4 @@ public class Sucursal extends Base{
             promociones.remove(p);
         }
     }
-
 }

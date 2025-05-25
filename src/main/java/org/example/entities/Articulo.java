@@ -1,36 +1,20 @@
 package org.example.entities;
-
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 import java.util.HashSet;
 import java.util.Set;
-
-public abstract class Articulo {
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@SuperBuilder
+@ToString
+public abstract class Articulo extends Base{
     protected String denominacion;
     protected double precioVenta;
 
     protected UnidadMedida unidadMedida;
     protected Set<Imagen> listaImagenes;
-
-
-    public Articulo() {
-    }
-
-    public Articulo(String denominacion, double precioVenta) {
-        this.denominacion = denominacion;
-        this.precioVenta = precioVenta;
-    }
-
-    public Articulo(String denominacion, double precioVenta, UnidadMedida unidadMedida) {
-        this.denominacion = denominacion;
-        this.precioVenta = precioVenta;
-        this.unidadMedida = unidadMedida;
-    }
-
-    public Articulo(String denominacion, double precioVenta, UnidadMedida unidadMedida, Imagen imagen) {
-        this.denominacion = denominacion;
-        this.precioVenta = precioVenta;
-        this.unidadMedida = unidadMedida;
-        this.agregarImagen(imagen);
-    }
 
     public void agregarImagen(Imagen imagen) {
         if(this.listaImagenes==null) {
@@ -43,13 +27,5 @@ public abstract class Articulo {
         if(this.listaImagenes!=null) {
             this.listaImagenes.remove(imagen);
         }
-    }
-    public String getDenominacion() {
-        return denominacion;
-    }
-
-    @Override
-    public String toString() {
-        return denominacion + ", precioVenta=" + precioVenta +", unidadMedida=" + unidadMedida+ ", listaImagenes=" + listaImagenes + "]";
     }
 }

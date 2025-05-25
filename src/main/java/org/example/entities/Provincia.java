@@ -1,6 +1,4 @@
 package org.example.entities;
-
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -13,6 +11,4 @@ import lombok.experimental.SuperBuilder;
 public class Provincia extends Base{
     private String nombre;
     private Pais pais;
-
-
 }

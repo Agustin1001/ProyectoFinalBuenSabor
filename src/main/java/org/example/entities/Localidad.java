@@ -1,5 +1,4 @@
 package org.example.entities;
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -12,5 +11,4 @@ import lombok.experimental.SuperBuilder;
 public class Localidad extends Base{
     private String nombre;
     private Provincia provincia;
-
 }

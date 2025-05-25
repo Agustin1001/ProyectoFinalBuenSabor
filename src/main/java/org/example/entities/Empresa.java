@@ -1,10 +1,8 @@
 package org.example.entities;
-
-import lombok.*;
-import lombok.experimental.SuperBuilder;
-
 import java.util.HashSet;
 import java.util.Set;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 @Setter
 @Getter
 @SuperBuilder
@@ -12,6 +10,7 @@ import java.util.Set;
 @NoArgsConstructor
 @ToString
 public class Empresa extends Base {
+
     private String nombre;
     private String razonSocial;
     private Integer cuil;
@@ -29,6 +28,5 @@ public class Empresa extends Base {
             this.sucursales.remove(sucursal);
         }
     }
-
 
 }
